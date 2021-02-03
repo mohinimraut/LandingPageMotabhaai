@@ -36,3 +36,159 @@
     transform: rotate(360deg);
   }
 }
+.hometitle1{
+  font-size: 40px;
+  color:#2c3d63;
+  text-align:center,
+
+}
+.hometitle{
+  font-size: 40px;
+  color:#2c3d63;
+  text-align:initial
+}
+.freedigitalman{
+  width: 80%;
+  height:80%;
+}
+.launchnum{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+/* ============Dilip=============== */
+ .btnstay{
+   margin-left: 5%;
+   margin-right: 10%;
+ background-color:rgb(42,62,99);
+ border-radius: 20px;
+ }
+ .parastay{
+   color: white;
+   text-align: center;
+   letter-spacing: 10px;
+   font-size: 30px;
+   align-content: center;
+   align-items: center;
+   margin: 10px;
+   
+ }
+
+ .paraemail{
+   margin: 30px;
+ }
+ .form-control{
+   border-radius: 10px;
+   font-size: 19px;
+ }
+
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  img#optionalstuf {
+    display: none;
+  }
+  #parastay{
+    display: none;
+  } 
+  .parastay{
+    font-size: 10px;
+  }
+ }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  img#optionalstuf {
+    display: none;
+  }
+  #parastay{
+    display: none;
+  } 
+  
+ 
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  img#optionalstuf {
+    display: none;
+  }
+  #parastay{
+    display: none;
+  } 
+  img#mainimg {
+    float: right;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #headingdiv{
+    float: left;
+    margin-top: 10%;
+  }
+  #smallhead1{
+    float: left;
+    margin-top: 2%;
+    
+  }
+
+  #timerdiv{
+    float: left;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  img#optionalstuff {
+    display: none;
+  }
+  
+  #btnhide{
+    display: none;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  img#optionalstuff {
+    display: none;
+  }
+ 
+  #btnhide{
+    display: none;
+ }
+}
+
+
+@media (min-width: 360px) and (max-width: 640px) { 
+  .secondLaunch{
+  margin-left:15px;
+  }
+  .launchnum{
+    margin-left:15px;
+  }
+  .launchbuttoncontainer{
+    margin-right:20px;
+  }
+  .btn-info{
+    font-size:10px;
+    width:100px;
+    height:40px;
+  }
+  
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+  .secondLaunch{
+  margin-left:15px;
+  }
+  .launchnum{
+    margin-left:15px;
+  }
+  
+}
+
+
+
+

@@ -1,0 +1,307 @@
+=========================Launch.js==========================================
+
+import React from 'react'
+import discover from '../src/images/discover-02.png';
+import facebook from '../src/images/facebook.png';
+import instagram from '../src/images/instagram.png';
+import twitter from '../src/images/twitter.png';
+import group from '../src/images/Group 40.png';
+import logo_subtext from '../src/images/logo_subtext.png';
+
+var countDownDate = new Date("Feb 27, 2021 15:37:25").getTime();
+var x = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+      
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+      
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+    // Output the result in an element with id="demo"
+    document.getElementById("demo1").innerHTML = days;
+    document.getElementById("demo2").innerHTML =  hours;
+   
+
+    document.getElementById("demo3").innerHTML = minutes;
+      
+
+    document.getElementById("demo4").innerHTML =  seconds;
+  
+      
+    // If the count down is over, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo1").innerHTML = "EXPIRED";
+      document.getElementById("demo2").innerHTML = "EXPIRED";
+      document.getElementById("demo3").innerHTML = "EXPIRED";
+      document.getElementById("demo4").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+function Launch() {
+    return (
+    <div class="container">
+    <div className="row">
+
+    <div className="col-lg-6" style={{backgroundColor:"#cce6ff"}}>
+    <div className="row">
+     <img src={group}  id="optionalstuff" alt="home img" style={{width:'50%',height:'50%'}}/>  
+    </div>
+    <div class="row hometitle1 ml-2 justify-content-center text-center" style={{fontFamily:"Comfortaa",fontWeight:"bold"}} id="headingdiv">
+       Free Digital platform 
+    </div>
+    <div>
+    <div class ="row justify-content-center text-center" style={{fontFamily:"Comfortaa",fontWeight:"bold"}} >
+      for sellers to promote,manage &
+    </div>
+    <div class ="row justify-content-center text-center pl-5" style={{fontFamily:"Comfortaa",fontWeight:"bold"}} >
+      sell their goods and services.
+    </div>
+
+    </div>
+      
+    <div class="row justify-content-center text-center" id="mainimg">
+       <img src={discover} class="img-fluid freedigitalman" alt="home img"/>  
+    </div>
+
+    <div class="row justify-content-center"  style={{color:"#2c3d63",fontWeight:"bold",fontFamily:"Comfortaa"}} id="timerdiv">
+     <p id="demo"></p>
+    <div class="col-2" style={{flexDirection:"row"}}>
+    <div class="launchnum">
+           <p id="demo1"></p>
+    </div>
+      Days
+    </div>
+          
+    <div class="col-2" style={{flexDirection:"row"}}>
+    <div class="launchnum">
+      <p id="demo2"></p>
+    </div>
+      Hours
+    </div>
+          
+    <div class="col-2"style={{flexDirection:"row"}}>
+    <div class="launchnum">
+      <p id="demo3"></p>
+    </div>
+      Minutes
+    </div>
+           
+    <div class="col-2" style={{flexDirection:"row"}}>
+    <div class="launchnum">
+      <p id="demo4"></p>
+    </div>
+      Second
+    </div>
+           
+    </div>
+       
+    </div>
+     
+   <div className="col-lg-6 ml-2 mt-5"> 
+   <button id="btnhide" type="button" class="btn-lg btnstay"><p class="parastay">STAY TUNED</p></button>
+   <div class="row mt-5 justify-content-center text-center ">
+       <img src={logo_subtext} id="optionalstuf" alt="home img" style={{width:'150px',height:'100px'}}/>  
+    </div>
+    <div class="row hidden-md" style={{fontSize:"20px"}}>
+        <p id="parastay" style={{letterSpacing:"10px"}}>STAY TUNED</p>
+    </div>
+    <div class="row justify-content-center text-center">
+        <h3 style={{fontFamily:"Comfortaa",fontWeight:"bold",color:"#2c3d63",fontSize:"40px"}}>We Will Launch Soon</h3>
+    </div>
+    <div class="row">
+        <p style={{fontFamily:"Comfortaa"}}>Subscribe to get notification as soon as we launch!</p>
+    </div>
+     
+    <div class="row justify-content-center text-center" style={{flexDirection:"row"}}>
+    <div className="col-7">
+     <input type="text" class="form-control" placeholder="Enter your email" />
+    </div>
+
+    <div className="col-5">
+    <button style={{fontFamily:"Comfortaa",fontWeight:"bold",backgroundColor:"#e6f2ff",borderRadius:10}} type="button" class="btn btn-info homebuttontest">NOTIFY ME</button>
+    </div>
+    
+    </div>
+
+     <div class="row justify-content-center text-center hometitle ml-2 m-5">
+      <div class="col-1">
+      <img src={twitter}  alt="home img" style={{width:'20px',height:'20px'}}/>  
+ 
+      </div>
+      <div class="col-1">
+      <img src={facebook}  alt="home img" style={{width:'20px',height:'20px'}}/>  
+ 
+      </div>
+      <div class="col-1">
+      <img src={instagram}  alt="home img" style={{width:'20px',height:'20px'}}/>  
+ 
+      </div>
+      </div>
+
+      <div class="row"  style={{color:"white",backgroundColor:"#2c3d63",fontFamily:"Comfortaa",fontSize:"16px",marginTop:"150px"}}>
+      <div class="col-sm-6">
+      Add:B/22 103 Ketki Sector 1 Shanti Nagar Opp Shanti Shopping Center, Mira Road, Thane, Maharashtra 401107
+      </div>
+      <div class="col-sm-6">
+       <p class="paraemail">Email:rockpolt@gmail.com</p>
+      </div>
+      </div>
+
+    
+      </div>
+
+      </div>
+      </div>
+    )
+}
+
+export default Launch;
+
+
+
+==========================================App.css========================================
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.hometitle1{
+  font-size: 40px;
+  color:#2c3d63;
+  text-align:center,
+
+}
+.hometitle{
+  font-size: 40px;
+  color:#2c3d63;
+  text-align:initial
+}
+.freedigitalman{
+  width: 80%;
+  height:80%;
+}
+.launchnum{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+/* ============Dilip=============== */
+ .btnstay{
+   margin-left: 5%;
+   margin-right: 10%;
+ background-color:rgb(42,62,99);
+ border-radius: 20px;
+ }
+ .parastay{
+   color: white;
+   text-align: center;
+   letter-spacing: 10px;
+   font-size: 30px;
+   align-content: center;
+   align-items: center;
+   margin: 10px;
+   
+ }
+
+ .paraemail{
+   margin: 30px;
+ }
+
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  img#optionalstuf {
+    display: none;
+  }
+  #parastay{
+    display: none;
+  } 
+  .parastay{
+    font-size: 10px;
+  }
+ }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  img#optionalstuf {
+    display: none;
+  }
+  #parastay{
+    display: none;
+  } 
+  
+ 
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  img#optionalstuf {
+    display: none;
+  }
+  #parastay{
+    display: none;
+  } 
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  img#optionalstuff {
+    display: none;
+  }
+  
+  #btnhide{
+    display: none;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  img#optionalstuff {
+    display: none;
+  }
+ 
+  #btnhide{
+    display: none;
+ }
+}
